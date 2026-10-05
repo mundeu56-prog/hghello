@@ -1,0 +1,20 @@
+difficulty:
+  start: 1.0
+  max: 99.0
+  step: 1.0               # 한 번에 오르는 양
+  interval-seconds: 30    # 몇 초마다 오를지 (접속자가 있을 때만 흐름)
+
+scaling:                  # 난이도 max일 때의 배율 (중간은 선형)
+  health-multiplier-at-max: 12.0
+  damage-multiplier-at-max: 6.0
+  speed-multiplier-at-max: 1.35
+  follow-range-at-max: 100.0
+
+spawn:
+  interval-ticks-start: 120   # 스폰 주기 (20틱 = 1초)
+  interval-ticks-min: 10
+  mob-cap-start: 8            # 플레이어 주변 48칸 내 몬스터 상한
+  mob-cap-at-max: 80
+  group-size-at-max: 6        # 한 번에 소환되는 최대 마리 수
+  min-distance: 18
+  max-distance: 40

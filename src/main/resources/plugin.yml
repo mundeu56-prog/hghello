@@ -1,0 +1,14 @@
+name: ApocalypseDifficulty
+version: '${project.version}'
+main: dev.apocalypse.DifficultyPlugin
+api-version: '26.2'
+description: 30초마다 오르는 난이도 시스템 (아포칼립스 몬스터)
+commands:
+  difficulty:
+    description: 난이도 확인/설정
+    usage: /difficulty [set <값>|reset]
+    aliases: [diff]
+permissions:
+  difficulty.admin:
+    description: 난이도 변경 권한
+    default: op
